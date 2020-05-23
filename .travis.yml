@@ -1,6 +1,7 @@
 ---
 
 language: bash
+dist: bionic
 
 env:
   global:
