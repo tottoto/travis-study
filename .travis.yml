@@ -16,5 +16,7 @@ jobs:
         - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
         - echo $MY_ENVIRONMENT_VARIABLE
       env:
-        - MY_GLOBAL_ENVIRONMENT_VARIABLE=hey
-        - MY_ENVIRONMENT_VARIABLE=hoy
+        global:
+          - MY_GLOBAL_ENVIRONMENT_VARIABLE=hey
+        matrix:
+          - MY_ENVIRONMENT_VARIABLE=hoy
