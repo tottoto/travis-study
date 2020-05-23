@@ -5,7 +5,7 @@ dist: bionic
 
 env:
   global:
-    - MY_GLOBAL_ENVIRONMENT_VARIABLE=global_myenv
+    MY_GLOBAL_ENVIRONMENT_VARIABLE: global_myenv
   matrix:
     - MY_ENVIRONMENT_VARIABLE=myenv_1
     - MY_ENVIRONMENT_VARIABLE=myenv_2
