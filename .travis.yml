@@ -29,10 +29,10 @@ jobs:
         - echo $piyo_2
       env:
         global:
-          piyo_2: PIYO_2
+          - piyo_2: PIYO_2
         matrix:
-          hoge_1: HOGE_1
-          hoge_1: HOGE_2
+          - hoge_1: HOGE_1
+          - hoge_1: HOGE_2
 
 script:
   - echo HOGEHOGE
