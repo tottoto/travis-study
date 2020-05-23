@@ -1,0 +1,11 @@
+---
+
+language: bash
+
+env:
+  matrix:
+    - MY_ENVIRONMENT_VARIABLE=myenv_1
+    - MY_ENVIRONMENT_VARIABLE=myenv_2
+
+script:
+  - echo $MY_ENVIRONMENT_VARIABLE
