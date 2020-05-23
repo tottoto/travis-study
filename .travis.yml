@@ -28,8 +28,11 @@ jobs:
         - echo $hoge_1
         - echo $piyo_2
       env:
-        hoge_1: HOGE_1
-        hoge_1: HOGE_2
-        piyo_2: PIYO_2
+        global:
+          piyo_2: PIYO_2
+        matrix:
+          hoge_1: HOGE_1
+          hoge_1: HOGE_2
+
 script:
   - echo HOGEHOGE
