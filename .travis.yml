@@ -1,7 +1,9 @@
 ---
 
-language: bash
+language: python
 dist: bionic
+python:
+  - 3.7
 
 env:
   global:
@@ -12,13 +14,13 @@ env:
 
 jobs:
   include:
-    - script:
-        - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
-        - echo $MY_ENVIRONMENT_VARIABLE
-      env: MY_ENVIRONMENT_VARIABLE=myenv_2
-
-install:
-  - echo INSTALLING!!!
+    - stage: test_1
+      script:
+        - echo $HOGE
+        - echo $PIYO
+      env:
+        hoge: HOGE
+        piyo: PIYO
 
 script:
   - echo HOGEHOGE
