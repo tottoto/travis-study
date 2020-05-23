@@ -17,5 +17,8 @@ jobs:
         - echo $MY_ENVIRONMENT_VARIABLE
       env: MY_ENVIRONMENT_VARIABLE=myenv_2
 
+install:
+  - echo INSTALLING!!!
+
 script:
   - echo HOGEHOGE
