@@ -16,3 +16,6 @@ jobs:
         - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
         - echo $MY_ENVIRONMENT_VARIABLE
       env: MY_ENVIRONMENT_VARIABLE=myenv_2
+
+script:
+  - echo HOGEHOGE
