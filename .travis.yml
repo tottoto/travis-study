@@ -11,6 +11,11 @@ env:
     - MY_ENVIRONMENT_VARIABLE=myenv_2
     - MY_ENVIRONMENT_VARIABLE=myenv_3
 
-script:
-  - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
-  - echo $MY_ENVIRONMENT_VARIABLE
+jobs:
+  include:
+    - script:
+        - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
+        - echo $MY_ENVIRONMENT_VARIABLE
+      env:
+        - MY_GLOBAL_ENVIRONMENT_VARIABLE=hey
+        - MY_ENVIRONMENT_VARIABLE=hoy
