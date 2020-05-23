@@ -9,7 +9,6 @@ env:
   matrix:
     - MY_ENVIRONMENT_VARIABLE=myenv_1
     - MY_ENVIRONMENT_VARIABLE=myenv_2
-    - MY_ENVIRONMENT_VARIABLE=myenv_3
 
 jobs:
   include:
