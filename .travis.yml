@@ -23,12 +23,13 @@ jobs:
         piyo: PIYO
     - stage: test_2
       script:
-        - echo $hoge
-        - echo $piyo
+        - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
+        - echo $MY_ENVIRONMENT_VARIABLE
         - echo $hoge_1
         - echo $piyo_2
       env:
         hoge_1: HOGE_1
+        hoge_1: HOGE_2
         piyo_2: PIYO_2
 script:
   - echo HOGEHOGE
