@@ -15,8 +15,4 @@ jobs:
     - script:
         - echo $MY_GLOBAL_ENVIRONMENT_VARIABLE
         - echo $MY_ENVIRONMENT_VARIABLE
-      env:
-        global:
-          - MY_GLOBAL_ENVIRONMENT_VARIABLE=hey
-        matrix:
-          - MY_ENVIRONMENT_VARIABLE=hoy
+      env: MY_ENVIRONMENT_VARIABLE=myenv_2
